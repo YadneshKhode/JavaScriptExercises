@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- If multi-language site, reconsider usage of html lang declaration here. -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Client</title>
+    <!-- View-port Basics: http://mzl.la/VYREaP -->
+    <!-- This meta tag is used for mobile device to display the page without any zooming,
+       so how much the device is able to fit on the screen is what's shown initially. 
+       Remove comments from this tag, when you want to apply media queries to the website. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+    <link rel="stylesheet" media="screen" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!--container start-->
+    <div class="container">
+      <!--header section start-->
+      <header>
+        <h1>Form Submission</h1>
+      </header>
+      <!--header section start-->
+      <!--main section start-->
+      <main>
+        <form action="#FIXME" method="POST">
+          <div class="form-group">
+            <label for="firstName">first name: </label>
+            <input type="text" id="firstName" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">last name: </label>
+            <input type="text" id="lastName" required />
+          </div>
+          <div class="form-group">
+            <label for="gender">gender</label>
+            <input type="radio"  name="gender" id="Male" value="Male" required />
+            <label for="Male">male</label>
+            <input type="radio"  name="gender" id="Female" value="Female" />
+            <label for="Female">female</label>
+          </div>
+          <div class="form-group">
+            <label for="address">address: </label>
+            <textarea id="address" cols="30" rows="5" required></textarea>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="termsAndConditions" required />
+            <label for="termsAndConditions">terms and conditions</label>
+          </div>
+          <div class="form-control">
+            <input type="submit" id="submit" value="Submit" />
+            <input type="reset" id="cancel" value="Cancel" />
+          </div>
+        </form>
+      </main>
+      <!--main section end-->
+
+      <!--footer section start-->
+      <footer>
+        <h6>Form Display</h6>
+        <ul id="dataHead">
+          <li>name</li>
+          <li>lastname</li>
+          <li>gender</li>
+          <li>address</li>
+          <li>edit</li>
+          <li>delete</li>
+        </ul>
+      </footer>
+      <!--footer section end-->
+    </div>
+    <!--container end-->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
+2
